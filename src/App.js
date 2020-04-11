@@ -1,10 +1,12 @@
 import React from 'react';
-import { NetParty } from './main'
+import { Homepage } from './homepage'
 import './App.css';
 
 function App() {
   return (
-    <NetParty />
+    <>
+      <Homepage />
+    </>
   );
 }
 
