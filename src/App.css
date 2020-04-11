@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Bebas+Neue&display=swap');
+
 .App {
   text-align: center;
 }
@@ -35,4 +37,10 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+body {
+  background-color: #D8572a;
+  font-family: 'Bebas Neue', cursive;
+  letter-spacing: 8px;
 }
