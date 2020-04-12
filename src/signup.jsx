@@ -24,27 +24,7 @@ export class Signup extends React.Component {
     }
     onSubmit() {
         if (this.state.username === "" || this.state.password === "") { console.log("Fields Empty"); return null }
-        const data = {"usr": this.state.username, "pwd": this.state.password}
-        console.log(data)
-        const payload = JSON.stringify(data)
-        fetch('https://hackathon2.roylatgnail.repl.co/', {
-            method: 'POST',
-            headers: {'Content-Type': 'application/json'},
-            body: payload
-        })
-        .then((response) => response.text())
-        .then((data) => {
-            console.log(data)
-            if (data === 'created account') {
-                alert('success')
-            }
-            if (data === 'username exists') {
-                alert('username already created')
-            }
-            else {
-                alert('Error, Try Again Later')
-            }
-        })
+        this.props.history.push('/party');
     }
     render() {
         return (

@@ -3,6 +3,7 @@ import { Homepage } from './homepage'
 import { Signup } from './signup'
 import { Test } from './webRTC'
 import { Login } from './login'
+import { Admin } from './admin'
 import {
   BrowserRouter as Router,
   Switch,
@@ -19,6 +20,7 @@ function App() {
         <Route path="/home" component={Homepage} />
         <Route path="/party" component={Test} />
         <Route path="/login" component={Login} />
+        <Route path="/admin" component={Admin} />
         <Route path="/" component={Homepage} />  
       </Switch>
       </Router>

@@ -24,20 +24,7 @@ export class Login extends React.Component {
     }
     onSubmit() {
         if (this.state.username === "" || this.state.password === "") { console.log("error"); return null }
-        const data = {"username": this.state.username, "password": this.state.password}
-        console.log(data)
-        const payload = JSON.stringify(data)
-        fetch('link', {
-            method: 'POST',
-            body: payload
-        })
-        .then((response) => response.json())
-        .then((data) => {
-        console.log('Success:', data);
-        })
-        .catch((error) => {
-        console.error('Error:', error);
-        });
+        this.props.history.push('/party');
     }
     render() {
         return (
