@@ -2,14 +2,26 @@ import React from 'react';
 import { Homepage } from './homepage'
 import { Signup } from './signup'
 import { Test } from './webRTC'
-import { startWebRTC } from './webRTC'
+import { Login } from './login'
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+} from "react-router-dom";
 import './App.css';
 
 function App() {
-  startWebRTC()
   return (
     <>
-      <Test /> 
+      <Router>
+      <Switch>
+        <Route path="/signup" component={Signup} />
+        <Route path="/home" component={Homepage} />
+        <Route path="/party" component={Test} />
+        <Route path="/login" component={Login} />
+        <Route path="/" component={Homepage} />  
+      </Switch>
+      </Router>
     </>
   );
 }

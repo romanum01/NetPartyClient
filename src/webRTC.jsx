@@ -1,17 +1,6 @@
 import React from 'react'
 
-export class Test extends React.Component {
-    render() {
-        return(
-            <div>
-            <video id="localVideo" autoPlay muted></video>
-            <video id="remoteVideo" autoPlay></video>
-            </div>
-        )
-    }
-}
-
-export function startWebRTC() {
+export function startWeb() {
   fetch("https://NetPartybackendptII.leoferrisi723.repl.co/uuid", {
     METHOD: 'GET'
   })
@@ -131,4 +120,22 @@ export function startWebRTC() {
     );
   }
   })
+  .catch((error) => {
+    alert('error')
+  })
+  }
+
+  export class Test extends React.Component {
+    onComponentMount() {
+      startWeb()
+    }
+      render() {
+          return(
+              <div>
+              <video id="localVideo" autoPlay muted></video>
+              <video id="remoteVideo" autoPlay></video>
+              <button onClick={startWeb}>Start</button>
+              </div>
+          )
+      }
   }

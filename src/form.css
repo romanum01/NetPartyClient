@@ -28,7 +28,7 @@
 .title {
     margin-top: 30px;
     text-align: center;
-    font-size: 150px;
+    font-size: 100px;
     color: #780116;
 }
 
@@ -42,8 +42,8 @@
 
 .submit {
     width: 200px;
-    margin-bottom: 30px;
-    padding: 50px;
+    margin-top: 30px;
+    padding: 20px;
     color: #780116;
     background-color: #D8572a;
     border: 4px solid #780116;

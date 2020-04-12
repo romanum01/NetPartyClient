@@ -9,6 +9,7 @@
     "framer-motion": "^1.10.3",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
+    "react-router-dom": "^5.1.2",
     "react-scripts": "3.4.1"
   },
   "scripts": {
@@ -31,5 +32,11 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  }
+  },
+  "description": "This project aims to solve the problem of live social events during a situation such as a quarantine. The browser-based software would function as a medium for people to host parties and social events online if they are unable to in person.",
+  "main": "index.js",
+  "devDependencies": {},
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
 }
