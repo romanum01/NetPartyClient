@@ -1,0 +1,10 @@
+#link {
+    float:right;
+    color: #780116;
+    font-size: 20px;
+}
+
+#localVideo, #remoteVideo {
+    border-radius: 20px;
+    margin: 20px;
+}

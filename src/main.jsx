@@ -10,6 +10,7 @@ export class NetParty extends React.Component {
             <div className="links">
             <Link to={'/signup'}>Sign Up</Link>
             <Link to={'/login'}>Login</Link>
+            <Link to={'/party'}>Join Party</Link>
             </div>
             </div>
         )

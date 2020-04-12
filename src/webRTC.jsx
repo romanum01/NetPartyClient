@@ -1,5 +1,6 @@
 import React from 'react'
 import { Home } from './home'
+import './party.css'
 
 export function startWeb() {
   if (window.location.hash.substring(1)) {
@@ -254,12 +255,14 @@ export function startWeb() {
             <>
               <Home />
               <p id="link"></p>
+              <li>
               <div>
               <video id="localVideo" autoPlay muted></video>
               </div>
               <div>
               <video id="remoteVideo" autoPlay></video>
               </div>
+              </li>
               <button onClick={startWeb}>Start</button>
             </>
           )
