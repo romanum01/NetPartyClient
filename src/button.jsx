@@ -1,20 +1,11 @@
-import React, { Component } from 'react'
+import React from 'react'
 
-export class Button extends Component {
-  
-    constructor(props) {
-      super(props);
-      this.sayHello = this.sayHello.bind(this);
-    }
-  
-    sayHello() {
-      alert('Hello!');
-    }
+export class ButtonClick extends React.Component {
     render() {
     return (
-      <button onClick={this.sayHello}>
-        Click me!
-      </button>
+      <div>
+      <button onClick={this.props.submit}>Submit</button>
+      </div>
     );
     }
   }

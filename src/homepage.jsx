@@ -1,16 +1,20 @@
 import React from 'react'
-import { Button } from './button'
+import { ButtonClick } from './button'
 import { NetParty } from './main'
 
 export class Homepage extends React.Component {
-    useLessFunction() {
-        alert("success")
+    constructor(props) {
+        super(props);
+        this.onSubmit = this.onSubmit.bind(this)
+    }
+    onSubmit() {
+        console.log("hi")
     }
     render() {
         return (
             <div>
                 <NetParty />
-                <Button page={this.useLessFunction}/>
+                <ButtonClick submit={this.onSubmit}/>
             </div>
         )
     }
