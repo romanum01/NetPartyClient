@@ -4,4 +4,6 @@ This project aims to solve the problem of live social events during a situation 
 
 Backend: https://github.com/LeviHarrison/NetPartyBackend2
 
+PartyID Backend: https://github.com/romanum01/PartyIDBackend
+
 Website: https://netparty.now.sh
