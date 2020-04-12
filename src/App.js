@@ -6,9 +6,10 @@ import { startWebRTC } from './webRTC'
 import './App.css';
 
 function App() {
+  startWebRTC()
   return (
     <>
-      <Signup /> 
+      <Test /> 
     </>
   );
 }

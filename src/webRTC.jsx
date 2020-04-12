@@ -12,15 +12,15 @@ export class Test extends React.Component {
 }
 
 export function startWebRTC() {
-if (!window.location.hash) {
-    window.location.hash = Math.floor(Math.random() * 0xFFFFFF).toString(16);
-  }
-  const roomHash = window.location.hash.substring(1);
-  
-  // TODO: Replace with your own channel ID
+  fetch("https://NetPartybackendptII.leoferrisi723.repl.co/uuid", {
+    METHOD: 'GET'
+  })
+  .then((response) => response.json())
+  .then((data) => {
+      // TODO: Replace with your own channel ID
   const drone = new window.ScaleDrone('yiS12Ts5RdNhebyM');
   // Room name needs to be prefixed with 'observable-'
-  const roomName = 'observable-' + roomHash;
+  const roomName = 'observable-' + data.uuid;
   const configuration = {
     iceServers: [{
       urls: 'stun:stun.l.google.com:19302'
@@ -130,4 +130,5 @@ if (!window.location.hash) {
       onError
     );
   }
-}
+  })
+  }
