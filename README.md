@@ -5,6 +5,8 @@ This project aims to solve the problem of live social events during a situation 
 Backend 1 (used for creating room id's): 
 Backend 2 (we never ended up using this one but we planned to have it handle everything else): https://github.com/LeviHarrison/NetPartyBackend2
 
+PartyID Backend: https://github.com/romanum01/PartyIDBackend
+
 Website: https://netparty.now.sh
 
 WireFrame: https://xd.adobe.com/view/bcaadf55-1a6b-479b-763b-9ef14f1082c6-ca9b/?fullscreen&hints=off
