@@ -117,7 +117,7 @@ export function startWeb() {
     );
   }
 
-  window.link.innerHTML = "netparty.sh.now/party/#" + roomID
+  window.link.innerHTML = "netparty.now.sh/party/#" + roomID
   }
   else {
   fetch("https://NetPartybackendptII.leoferrisi723.repl.co/uuid", {
@@ -237,7 +237,7 @@ export function startWeb() {
       onError
     );
   }
-  window.link.innerHTML = "netparty.sh.now/party/#" + data.uuid
+  window.link.innerHTML = "netparty.now.sh/party/#" + data.uuid
 
   })
   .catch((error) => {
@@ -255,14 +255,12 @@ export function startWeb() {
             <>
               <Home />
               <p id="link"></p>
-              <li>
               <div>
               <video id="localVideo" autoPlay muted></video>
               </div>
               <div>
               <video id="remoteVideo" autoPlay></video>
               </div>
-              </li>
               <button onClick={startWeb}>Start</button>
             </>
           )
